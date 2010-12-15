@@ -1,0 +1,39 @@
+package blokus;
+
+//For pentomino names, see
+//http://www.cimt.plymouth.ac.uk/resources/puzzles/pentoes/pentoint.htm
+enum Tiles {oneSquare, domino, smallL, threeRow, fourLine, fourL, fourSquare,
+                zigZag, T, fiveJ, fiveT, fiveL, fiveZigZag, Z, fiveLine, 
+                P, W, U, F, cross, Y};
+
+/**
+ *
+ * @author vjsingh
+ */
+public class Piece {
+    boolean[][] _positions;
+
+    Piece() {
+        _positions = new boolean[5][5];
+    }
+
+
+    public void rotateCW() { //not sure this is right yet
+        boolean[][] newPositions =  new boolean[5][5];
+        for (int j = 4; j >= 0; --j) {
+            for (int i = 0; i < 5; ++i) {
+                newPositions[4-j][i] = _positions[i][j];
+            }
+        }
+    }
+
+    public void rotateCCW() {
+        boolean[][] newPositions =  new boolean[5][5];
+        for (int i = 4; i >= 0; --i) {
+            for (int j = 0; j < 5; ++j) {
+                newPositions[j][4-i] = _positions[i][j];
+            }
+        }
+    }
+
+}
