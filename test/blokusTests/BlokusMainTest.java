@@ -2,6 +2,9 @@ package blokusTests;
 
 import gui.MainWindow;
 import java.util.LinkedList;
+
+import main.BlokusMain;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

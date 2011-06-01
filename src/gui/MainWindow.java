@@ -6,6 +6,7 @@
 package gui;
 
 import blokus.*;
+//import BlokusMain;
 import network.*;
 import ai.AIPlayer;
 import com.sun.j3d.*;
