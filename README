@@ -1,0 +1,7 @@
+This project was made as a final project for Brown's Software Engineering class by Varun Singh, Dan Kimmel, Alex Hiils, and Greg Young.
+
+Its a remake of the classic board game Blokus, except that the playing board is a 3d cube instead of the 2d square in the real game. The game features networked multiplayer play and chat, AI, move suggestions, roll-back of moves, and tutorials.
+
+Working versions of the game are featured in dist/ (.jar for Windows and .app for Macs). Any problems, comments, or suggestions, let us know at Varun_Singh@brown.edu.
+
+Thanks for playing!
